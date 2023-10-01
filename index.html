@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+
+    <!-- Add a new board -->
+    <div class="board">
+        <input type="text" id="boardName" placeholder="Board Name">
+        <button onclick="addBoard()">Add Board</button>
+    </div>
+
+    <!-- List of boards -->
+    <div class="board-list">
+        <!-- Example board, you can create these dynamically with JavaScript -->
+        <div class="board">
+            <h2>Board 1</h2>
+            <ul class="todo-list">
+                <!-- Example todo items -->
+                <li>
+                    <input type="checkbox">
+                    <span>Task 1</span>
+                    <button onclick="deleteTodo(this)">Delete</button>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <span>Task 2</span>
+                    <button onclick="deleteTodo(this)">Delete</button>
+                </li>
+            </ul>
+            <input type="text" placeholder="New Task">
+            <button onclick="addTodo()">Add Task</button>
+        </div>
+    </div>
+
+    <script src="todo.js"></script> <!-- Link your JavaScript file here -->
+</body>
+</html>
